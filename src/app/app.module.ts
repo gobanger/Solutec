@@ -8,13 +8,17 @@ import localeFr from '@angular/common/locales/fr'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodolistComponent } from './todo-list/todo-list.component';
+import { ReplaceComa } from './shared/pipes/replace-coma';
+import { StarRatingComponent } from './shared/components/star-rating/star-rating.component';
 
 registerLocaleData(localeFr, 'fr');
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodolistComponent
+    TodolistComponent,
+    ReplaceComa,
+    StarRatingComponent
   ],
   imports: [
     BrowserModule,

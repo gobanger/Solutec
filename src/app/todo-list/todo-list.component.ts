@@ -23,7 +23,7 @@ export class TodolistComponent implements OnInit{
       },
       {
             "hotelId": 2,
-            "hotelName": "Marakech",
+            "hotelName": "Marakech ,",
             "description": "Profitez de la vue sur les montagnes",
             "price": 145.5,
             "imageUrl": "assets/img/the-interior.jpg",
@@ -55,7 +55,7 @@ export class TodolistComponent implements OnInit{
 
   ngOnInit(): void {
       this.filteredHotels = this.hotels;
-      this.hotelFilter = 'mot'
+      this._hotelFilter = ''
   }
 
   public toogleIsNewBadge() : void{
@@ -66,9 +66,9 @@ export class TodolistComponent implements OnInit{
     return this._hotelFilter;
   }
   public set hotelFilter(filter : string){
-    this.hotelFilter = filter;
+    this._hotelFilter = filter;
 
-    this.filteredHotels = this.hotelFilter ? this.filterHotels(this.hotelFilter) : this.hotels;
+    this.filteredHotels = this._hotelFilter ? this.filterHotels(this._hotelFilter) : this.hotels;
   }
 
   private filterHotels(criteria: string): IHotel[] {

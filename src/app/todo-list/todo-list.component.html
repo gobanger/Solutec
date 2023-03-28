@@ -65,11 +65,13 @@
     <div class="col-sm-5 mb-2 mb-sm-3 " *ngFor="let i of filteredHotels">
       <div class="card">
         <div class="card-body">
-          <h5 class="p-3 mb-2 bg-success text-white">{{i.hotelName}}</h5>
+          <h5 class="p-3 mb-2 bg-success text-white">{{i.hotelName | titlecase}}</h5>
           <h4 class="card-title"></h4>
           <img [src]="i.imageUrl" [title]="i.hotelName | uppercase" class="card-img-top mb-2"/>
-          <p class="card-text">{{i.description}}</p>
-          <p class="card-text">{{i.price | currency: 'EUR' : 'symbol' : '1.2-2' : 'fr'}}</p>
+          <p class="card-text">{{ i.description }}</p>
+          <p class="card-text">{{ i.price | currency:'EUR':'symbol':'1.2-2':'fr' }}</p>
+
+          <span><app-star-rating></app-star-rating></span>
           <span class="badge rounded-pill text-bg-success" *ngIf="showBadge">Nouveau</span>
         </div>
       </div>
