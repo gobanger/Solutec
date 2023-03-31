@@ -19,7 +19,7 @@ export class TodolistComponent implements OnInit{
             "description": "Belle vue au bord de la mer",
             "price": 230.5,
             "imageUrl": "assets/img/hotel-room.jpg",
-            //"rating": 3.5
+            //"rating": 3.0
       },
       {
             "hotelId": 2,
