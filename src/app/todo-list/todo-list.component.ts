@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'; 
+import { Router } from '@angular/router';
 import { IHotel } from './todo-list';
  
 @Component({ 
@@ -19,7 +20,7 @@ export class TodolistComponent implements OnInit{
             "description": "Belle vue au bord de la mer",
             "price": 230.5,
             "imageUrl": "assets/img/hotel-room.jpg",
-            //"rating": 3.0
+            "rating": 3.0
       },
       {
             "hotelId": 2,
@@ -27,7 +28,7 @@ export class TodolistComponent implements OnInit{
             "description": "Profitez de la vue sur les montagnes",
             "price": 145.5,
             "imageUrl": "assets/img/the-interior.jpg",
-            //"rating": 5
+            "rating": 5
       },
       {
             "hotelId": 3,
@@ -35,7 +36,7 @@ export class TodolistComponent implements OnInit{
             "description": "Séjour complet avec service de voitures",
             "price": 120.12,
             "imageUrl": "assets/img/indoors.jpg",
-            //"rating": 4
+            "rating": 4
       },
       {
             "hotelId": 4,
@@ -43,7 +44,7 @@ export class TodolistComponent implements OnInit{
             "description": "Magnifique cadre pour votre séjour",
             "price": 135.12,
             "imageUrl": "assets/img/window.jpg",
-            //"rating": 2.5
+            "rating": 2.5
       }
   ];
 

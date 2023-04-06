@@ -1,3 +1,7 @@
 .filter {
     font-size: 30px;
 }
+
+.starRate {
+    width: fit-content;
+}
