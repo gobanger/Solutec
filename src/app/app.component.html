@@ -1,3 +1,9 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic HTML File</title>
+</head>
 <div class="card text-center" id="navbar">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -6,29 +12,18 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="listeHotel" routerLinkActive="active-route">Liste hotel</a>
-            </li>
-            <li class="nav-item accordion">
-                <div class="accordion-item">
-                    <p class="accordion-header" id="headingOne">
-                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">1. What is HTML?</button>									
-                    </p>
-                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
-                        <div class="card-body">
-                            <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-            </li>
-            </ul>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </li>
+              </ul>              
             <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Recherche</button>
@@ -44,15 +39,15 @@
         <div class="row">
             <div class="col-md-6">
             <div class="row">
-                <div class="col-md-6 ">
+                <div class="col-md-6">
                     <div class="logo-part">
-                        <img src="https://esic-online.com/wp-content/uploads/2016/12/logo.png" class="w-50 logo-footer">
+                        <img src="assets/img/baboom.jpg" class="w-50 logo-footer">
                         <br> <br>
                         <p>36 Avenue Pierre Brossolette <br> 92240 Malakoff </p>
                     </div>
                 </div>
                 <div class="col-md-6 px-4">
-                    <h6> À propos de l'ESIC</h6>
+                    <h6> À propos de Baboom</h6>
                     <p>Déclaration d’activité enregistrée sous le numéro 11921550092 auprès du préfet de la région
                         d’Ile-de-France</p>
                 </div>
@@ -64,7 +59,7 @@
                     <h6> Retrouvez-nous en ligne</h6>
                     <div class="row" style="text-align: center;">
                         <div class="col-md-6">
-                        <p><a href="https://www.esic.fr/"> www.esic.fr </a> </p>
+                        <p><a href="https://www.esic.fr/"> Ba la vous êtes déjà sur le site </a> </p>
 
                         </div>
                     </div>
@@ -82,3 +77,4 @@
     </div>
     </footer>
 </div>
+</html>
