@@ -1,37 +1,84 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Baboom</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="listeHotel" routerLinkActive="active-route">Liste hotel</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+<div class="card text-center" id="navbar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Baboom</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="listeHotel" routerLinkActive="active-route">Liste hotel</a>
+            </li>
+            <li class="nav-item accordion">
+                <div class="accordion-item">
+                    <p class="accordion-header" id="headingOne">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">1. What is HTML?</button>									
+                    </p>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                        <div class="card-body">
+                            <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+            </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Recherche</button>
-        </form>
-      </div>
-    </div>
-  </nav>
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Recherche</button>
+            </form>
+        </div>
+        </div>
+    </nav>
 
-  <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
+
+    <footer id="footer" class="navbar bg-body-tertiary" style="background-color: rgb(142, 10, 10);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="logo-part">
+                        <img src="https://esic-online.com/wp-content/uploads/2016/12/logo.png" class="w-50 logo-footer">
+                        <br> <br>
+                        <p>36 Avenue Pierre Brossolette <br> 92240 Malakoff </p>
+                    </div>
+                </div>
+                <div class="col-md-6 px-4">
+                    <h6> À propos de l'ESIC</h6>
+                    <p>Déclaration d’activité enregistrée sous le numéro 11921550092 auprès du préfet de la région
+                        d’Ile-de-France</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-6 px-4">
+                    <h6> Retrouvez-nous en ligne</h6>
+                    <div class="row" style="text-align: center;">
+                        <div class="col-md-6">
+                        <p><a href="https://www.esic.fr/"> www.esic.fr </a> </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <h6> Contact </h6>
+                    <div class="social">
+                        <p> <i class="fas fa-envelope me-3"></i> info@esic.fr</p>
+                        <p><i class="fas fa-phone me-3"></i> 01 53 90 15 20</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+</div>

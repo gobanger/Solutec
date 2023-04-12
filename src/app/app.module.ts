@@ -11,6 +11,8 @@ import { TodolistComponent } from './todo-list/todo-list.component';
 import { ReplaceComa } from './shared/pipes/replace-coma';
 import { StarRatingComponent } from './shared/components/star-rating/star-rating.component';
 import { TestYanisComponent } from './test-yanis/test-yanis.component';
+import { ListeDeroulanteComponent } from './liste-deroulante/liste-deroulante.component';
+import { HomeComponent } from './home/home.component';
 
 registerLocaleData(localeFr, 'fr');
 
@@ -20,7 +22,9 @@ registerLocaleData(localeFr, 'fr');
     TodolistComponent,
     ReplaceComa,
     StarRatingComponent,
-    TestYanisComponent
+    TestYanisComponent,
+    ListeDeroulanteComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    #footer {
+        display: none;
+        margin-bottom: 1%;
+    }
+}
+
+#navbar{
+    background-color: bisque;
+}
